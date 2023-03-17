@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- css styling by AYOMIDE-->
+    <div>
+    <h1 id="subheading" >Fill in your form</h1>
+    </div>
+    <div>
+    <form method="get">
+        <fieldset class="subtext">
+            <legend>Biodata</legend>
+            <label for="First Name">First Name :</label>
+            <input type="text" name="First Name" id="First Name" required>
+            <label for="Last Name">Last Name :</label>
+            <input type="text" name="Last Name" id="Last Name" required>
+            
+            <label for="male">Male :</label>
+            <input type="radio" name="sex" id="male" value="male">
+            <label for="Female">Female :</label>
+            <input type="radio" name="sex" id="female" value="female">
+            <label for="others">Others :</label>
+            <input type="radio" name="sex" id="others" value="others"><br>
+            <label for="phone">Enter your phone number:</label>
+            <input type="tel" id="phone" name="phone" pattern="{0-9}{3}- {0-9}{2}- {0-9}{3}" required>
+            <label for="email">Email :
+            </label>
+            <input type="email" name="email" id="email" required>
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="your password" pattern="{5,10}" required title="please enter password of length 5 to 10">
+            <button type="button" onclick="alert"('Form submitted'.)>submit</button>
+            
+        </fieldset>
+            
+    </form>
+</div>
+    <script type="text/javascipt">
+        alert("successfully submitted");
+    </script>
+</body>
+</html>
